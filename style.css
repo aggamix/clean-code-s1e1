@@ -35,14 +35,14 @@
   display: flex;
 }
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 input,button {
-  outline:none;
+  outline: none;
 }
 .centered-block__button {
   background: none;
@@ -133,14 +133,14 @@ input,button {
 
 /* Edit Task */
 .centered-block__task .centered-block__input-text {
-  display:none
+  display: none
 }
 
 .centered-block__task_edit-mode .centered-block__input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .centered-block__task_edit-mode .centered-block__title-task:first-of-type {
-  display:none;
+  display: none;
 }
