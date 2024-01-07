@@ -18,8 +18,8 @@
 }
 
 @media (max-width:768px) {
-.header-block { text-align: center;
-}
+  .header-block { text-align: center;
+  }
 }
 .centered-block {
   display: block;
@@ -41,7 +41,7 @@ ul {
 li, h3 {
   list-style:none;
 }
-input,button{
+input,button {
   outline:none;
 }
 .centered-block__button {
