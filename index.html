@@ -13,56 +13,54 @@
       charset="utf-8"
     >
   </head>
-  <body>
-    <div class="header">
-      <img src="./eisenhower-matrix.jpg">
+  <body class="page">
+    <section class="header-block">
+      <img src="./eisenhower-matrix.jpg" class="header-block__matrix-eisenhower">
       <a
-        class="more-inf"
+        class="header-block__more-inf"
         href="https://goal-life.com/page/method/matrix-eisenhower"
       >Want more details?</a>
-    </div>
-    <div class="centered-block">
-      <p id="newTask">
-        <label for="titleNewTask">Add Item</label>
-        <div class="centered-block__add-row">
-          <input id="titleNewTask" class="centered-block__input" type="text">
-          <button>Add</button>
-        </div>
-      </p>
-      <h3>Todo</h3>
+    </section>
+    <section class="centered-block">
+      <h1 class="centered-block__heading-block" id="titleAddBlock">Add Item</h1>
+      <div id="newTask" class="centered-block__add-task">
+        <input id="titleNewTask" class="centered-block__title-task centered-block__input-text" type="text">
+        <button class="centered-block__button">Add</button>
+      </div>
+      <h3 class="centered-block__heading-block">Todo</h3>
       <ul id="activeTasks">
-        <li>
-          <input type="checkbox">
-          <label class="centered-block__input">Pay Bills</label>
-          <input type="text" class="centered-block__input">
-          <button class="centered-block__button-edit">Edit</button>
-          <button class="centered-block__button-delete">
-            <img src="./remove.svg">
+        <li class="centered-block__task">
+          <input class="centered-block__input-checkbox" type="checkbox">
+          <label class="centered-block__title-task">Pay Bills</label>
+          <input type="text" class="centered-block__title-task centered-block__input-text">
+          <button class="centered-block__button centered-block__button-edit">Edit</button>
+          <button class="centered-block__button centered-block__button-delete">
+            <img src="./remove.svg" class="centered-block__button-img">
           </button>
         </li>
-        <li class="centered-block__edit-mode">
-          <input type="checkbox">
-          <label class="centered-block__input">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="centered-block__input">
-          <button class="centered-block__button-edit">Save</button>
-          <button class="centered-block__button-delete">
-            <img src="./remove.svg">
+        <li class="centered-block__task centered-block__task_edit-mode">
+          <input class="centered-block__input-checkbox" type="checkbox">
+          <label class="centered-block__title-task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="centered-block__title-task centered-block__input-text">
+          <button class="centered-block__button centered-block__button-edit">Save</button>
+          <button class="centered-block__button centered-block__button-delete">
+            <img src="./remove.svg" class="centered-block__button-img">
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
+      <h3 class="centered-block__heading-block">Completed</h3>
       <ul id="completedTasks">
-        <li>
-          <input type="checkbox" checked>
-          <label class="centered-block__input">See the Doctor</label>
-          <input type="text" class="centered-block__input">
-          <button class="centered-block__button-edit">Edit</button>
-          <button class="centered-block__button-delete">
-            <img src="./remove.svg">
+        <li class="centered-block__task">
+          <input class="centered-block__input-checkbox" type="checkbox" checked>
+          <label class="centered-block__title-task">See the Doctor</label>
+          <input type="text" class="centered-block__title-task centered-block__input-text">
+          <button class="centered-block__button centered-block__button-edit">Edit</button>
+          <button class="centered-block__button centered-block__button-delete">
+            <img src="./remove.svg" class="centered-block__button-img">
           </button>
         </li>
       </ul>
-    </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
